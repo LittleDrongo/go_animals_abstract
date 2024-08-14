@@ -5,7 +5,7 @@ import "fmt"
 // Определяем интерфейс Animal с методом Eat()
 type Animal interface {
 	Eat()
-	SetName() string
+	SetName(string)
 }
 
 type AnimalImpl struct {
