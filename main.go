@@ -17,6 +17,7 @@ func main() {
 	dog.Eat()
 	duck.Eat() //@override функции
 
+	// Индивидуальные методы.
 	cat.Meow()
 	dog.Bark()
 	duck.Quack()
