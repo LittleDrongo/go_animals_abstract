@@ -1,6 +1,8 @@
 package animals
 
-import "fmt"
+import (
+	"fmt"
+)
 
 type Duck struct {
 	AnimalAbstract
@@ -10,10 +12,6 @@ func (d *Duck) Quack() {
 	fmt.Println("Кря!!!")
 }
 
-/*
-// Собственная реализация Eat, будет отличаться от Animal!
 func (d *Duck) Eat() {
-	fmt.Println("ЭТО ЖИВОТНОЕ КУШАЕТ ПО ДРУГОМУ, ПОТОМУ ЧТО ЭТО УТКА С СОБСТВЕННОЙ ФУНКЦИЕЙ EAT")
-
+	fmt.Printf("Утка %v кушает по другому \n", d.name)
 }
-*/

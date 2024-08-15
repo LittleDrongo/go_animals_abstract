@@ -1,6 +1,9 @@
 package main
 
-import "app/animals"
+import (
+	"app/animals"
+	"fmt"
+)
 
 func main() {
 
@@ -8,19 +11,25 @@ func main() {
 	dog := &animals.Dog{}
 	duck := &animals.Duck{}
 
-	duck.SetName("Скрудж")
-	cat.SetName("Солнышко")
-	dog.SetName("Пятнышко")
+	// cat.SetName("Солнышко")
+	cat.New("Солнышко")
+	cat.Tail = 50
+
+	dog.New("Пятнышко")
+	duck.New("Скрудж")
 
 	// Обобщеные функции
 	cat.Eat()
 	dog.Eat()
-	duck.Eat() //@override функции
+
+	duck.Eat() //@override функции //TODO
 
 	// Индивидуальные методы.
 	cat.Meow()
 	dog.Bark()
-	duck.Quack()
+
+	fmt.Println(cat)
+
 }
 
 /* //README
