@@ -2,7 +2,7 @@ package animals
 
 // Структура Dog, которая встраивает AnimalImpl
 type Dog struct {
-	AnimalImpl
+	AnimalAbstract
 }
 
 // Метод Bark для Dog

@@ -1,7 +1,7 @@
 package animals
 
 type Cat struct {
-	AnimalImpl
+	AnimalAbstract
 }
 
 func (c *Cat) Meow() {

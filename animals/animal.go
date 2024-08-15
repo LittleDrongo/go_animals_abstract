@@ -8,11 +8,11 @@ type Animal interface {
 	SetName(string)
 }
 
-type AnimalImpl struct {
+type AnimalAbstract struct {
 	name string
 }
 
-func (a *AnimalImpl) SetName(name string) {
+func (a *AnimalAbstract) SetName(name string) {
 	a.name = name
 }
 
@@ -22,6 +22,6 @@ func (a *AnimalImpl) GetName() string {
 }
 */
 
-func (a *AnimalImpl) Eat() {
+func (a *AnimalAbstract) Eat() {
 	fmt.Printf("Животное %v кушает \n", a.name)
 }
